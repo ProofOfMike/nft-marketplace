@@ -1,0 +1,94 @@
+/* Styling for the modal container */
+.custom-modal-hidden {
+  display: none;
+}
+
+.custom-modal-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(112, 106, 106, 0.65); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Styling for the modal content */
+.custom-modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styling for the inner modal with adjustable width */
+.custom-modal-inner {
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.custom-modal-closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0px 5px 2px;
+  background-color: white;
+  color: black;
+  z-index: 1001;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* Header styling */
+.custom-modal-header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: black;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+/* Body styling */
+.custom-modal-body {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 40px;
+  color: black;
+  text-align: center;
+}
+
+.custom-modal-description {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+
+/* Footer styling */
+.custom-modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Button styling */
+.custom-modal-btn {
+  width: 120px;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-btn-success {
+  background: #4caf50;
+  color: white;
+}
+
+.custom-btn-close {
+  border: 1px solid #4caf50;
+  background: white;
+  color: #4caf50;
+}

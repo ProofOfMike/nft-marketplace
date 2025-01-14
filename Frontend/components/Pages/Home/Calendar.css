@@ -1,0 +1,86 @@
+.calendar-container {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /* padding: 10px; */
+  overflow: hidden; /* Ensure overflow does not leak out of container */
+}
+
+.scroll-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  transform: scale(1);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 4%;
+}
+.dates-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%; /* Ensure the container takes up the full width */
+  padding: 10px 0;
+}
+
+/* WebKit scrollbar styles */
+.dates-container::-webkit-scrollbar {
+  width: 8px; /* Adjust width if needed */
+}
+
+.dates-container::-webkit-scrollbar-thumb {
+  background: #13a6d4;
+  border-radius: 20px;
+  width: var(
+    --scrollbar-length
+  ); /* Dynamically adjust height based on scroll ratio */
+}
+
+.date-item {
+  min-width: 50px;
+  /* padding-left: 20px; */
+  justify-content: center;
+  min-height: 70px;
+  display: -webkit-inline-flex;
+  align-items: center;
+  text-align: center;
+  /* background-color: #8A8A8A; */
+  margin: 0 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.date-item.active {
+  background-color: #13a6d4;
+}
+.week-date {
+  color: gray;
+}
+.week-date.active {
+  color: white;
+}
+.selected-date {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 18px;
+  font-weight: bold;
+  /* background-color: #8E8E8E; */
+  color: white;
+
+  height: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

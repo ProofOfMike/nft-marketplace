@@ -1,0 +1,25 @@
+.swiper-pagination-bullet {
+  background: white; /* Default bullet color */
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff; /* Active bullet color */
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Color of the navigation arrows */
+}
+
+/* Custom styles for the navigation buttons, if needed */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0;
+}
